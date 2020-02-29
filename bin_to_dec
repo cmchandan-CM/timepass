@@ -1,0 +1,11 @@
+
+str=input("enter the binary value")
+str=str[::-1]
+list=[]
+for i in range(len(str)):
+    if(str[i]=='1'):
+        list.append(i)
+k=0
+for i in list:
+    k+=pow(2,i)
+print(k)
